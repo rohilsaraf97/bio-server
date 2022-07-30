@@ -1,1 +1,1 @@
-web: npx prisma migrate dev && node ./build/index.js
+web: npx prisma db push && node ./build/index.js
