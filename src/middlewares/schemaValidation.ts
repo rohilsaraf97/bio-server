@@ -1,4 +1,5 @@
-import { Request, Response, NextFunction } from "express";
+// @ts-ignore
+import type { Request, Response, NextFunction } from "express";
 import { z, AnyZodObject } from "zod";
 
 const validate =
