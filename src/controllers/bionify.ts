@@ -1,5 +1,4 @@
-// @ts-ignore
-import type { Request, Response } from "express";
+import { Request, Response } from "express";
 import axios from "axios";
 import prisma from "../prisma";
 

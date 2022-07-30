@@ -1,6 +1,5 @@
-// @ts-ignore
 import prisma from "../prisma";
-import type { Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction } from "express";
 
 const parseDb = async (req: Request, res: Response, next: NextFunction) => {
   const url = await prisma.url.findUnique({
