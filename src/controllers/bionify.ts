@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
+import { Request, Response } from "express";
 import axios from "axios";
 import prisma from "../prisma";
-import { Request, Response } from "express";
 
 const bionify = async (req: Request, res: Response) => {
   const { htmlBody, fixation, saccade, url } = req.body;

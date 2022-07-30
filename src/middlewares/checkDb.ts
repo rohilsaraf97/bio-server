@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import prisma from "../prisma";
 import { Request, Response, NextFunction } from "express";
+import prisma from "../prisma";
 
 const parseDb = async (req: Request, res: Response, next: NextFunction) => {
   const url = await prisma.url.findUnique({
