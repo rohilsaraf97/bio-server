@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Request, Response, NextFunction } from "express";
 import { z, AnyZodObject } from "zod";
 
